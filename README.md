@@ -1,20 +1,20 @@
-# reconocimiento-facial
+## reconocimiento-facial
 En este repositorio se almacena el proyecto de reconocimiento facial como parte del curso de Redes neuronales de la BUAP.
 
 
 
-#Sobre el repositorio.
+## Sobre el repositorio
 En este proyecto se realiza el reconocimiento de atributos entrenando una red con la base de datos de CelebA que se puede encontrar en kaggle.
 Esta base de datos contiene mas de 200,000 imagenes de rostros de famosos, ademas de un archivo de texto que etiqueta los atributos que hay en cada imagen, como cabello negro, nariz grade, lentes, etc. 
 
 ![image](https://user-images.githubusercontent.com/114697211/203874181-02dbed9a-f6e2-4f52-8c78-5963ff974248.png)
 
-
+## Vista general
 Para la primera parte del proyecto necesitamos entrenar un modelo con imagenes de rostro, de forma que el modelo aprenda a identificar caracteristicas en imagenes, una vez logrado esto podemos reutilizar este modelo para crear otro con un objetivo distinto, el de reconocer mi rostro. 
 
 Esta tecnica de entrenar un modelo con una base grande y luego reutilizarlo para crear otro modelo con otro fin se conoce como Transfer learning y es una tecnica muy poderosa para crear nuevos modelos y muy eficientes a partir de otros. 
 
-#
+## Descripcion del proyecto 
 Como primer paso importamos las paqueterias necesarias y cargamos los datos de CelebA, los cuales consisten en una lista de atributos y una carpeta con imagenes, e iniciamos con el procesamiento de datos. Al ser dos tipos de datos completamente distintos, cada uno se procesa de cierta forma, para la lista de atributos lo mas conveniente es convertirla a un csv y se realizo una limpieza de datos. 
 
 
