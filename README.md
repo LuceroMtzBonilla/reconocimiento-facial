@@ -23,8 +23,7 @@ Como primer paso importamos las paqueterias necesarias y cargamos los datos de C
 
 Para las imagenes procedemos a definir su ruta y realizamos el procesamiento de imagenes que corresponde a la normalizacion de la intensidad de los pixeles y redimensionar. 
 
-<img width="1107" alt="image" src="https://user-images.githubusercontent.com/114697211/203875680-2e8f367c-77f6-4c1a-8b69-1a890c59bb05.png">
-
+<img width="1107" alt="image" src="https://user-images.githubusercontent.com/114697211/203880636-d6e93225-d8b3-4830-8c6c-ef5b854cfc59.png">
 
 despues se hace la union de estos dos datos, entrada por entrada, cada imagen con su correspondiente lista de atributos. 
 
