@@ -36,8 +36,25 @@ Usamos el optimizador rmsprop, la funcion loss binary_crossentropy y una metrica
 Por ultimo entrenamos la red.
 
 
+Para la segunda parte del proyecto, usaremos el modelo ya entrenado para crear un nuevo modelo con un fin distinto, mientras que el modelo 1 tiene la funcion de identificar atributos en imagenes de rostros, el modelo 2 se encargara de reconocer atributos de mi rostro, y asi, identificar que imagen corresponde a mi y cuales no. En principio, cargamos las paqueterias e imagenes de mi rostro, las cuales ya fueron segmentadas en train y validation para la parte de entrenamiento, despues procedemos al procesamiento de imagenes al igual que en el modelo anterior. 
+
+Creacion del modelo 2, como ya se habia mencionado, usaremos el modelo anterior como base para este nuevo modelo, para ello cargaremos el modelo ya entrenado y congelaremos los pesos para que no se entrenen, esto se indica en codigo como sigue 
+
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/114697211/204127146-99f9c139-c561-481f-bd2f-01792c7fc9e3.png">
+
+ademas agregamos un clasificador, es decir, una vez aplanada la red, se agrega una neurona como la capa de salida para que el output sea un si o no.
+
+Dado el tipo de datos y de salida que buscamos, lo mas conveniente fue utilizar una funcion de costo binaria y el optimizador Adam. Por ultimo, entrenamos el modelo
+
+<img width="1015" alt="image" src="https://user-images.githubusercontent.com/114697211/204127287-4a57f5f5-abfa-4467-af02-c34e353193fb.png">
 
 
+
+Algunas incovenientes encontrados, al momento de definir el segundo modelo, me aparecia el siguiente error 
+
+<img width="793" alt="image" src="https://user-images.githubusercontent.com/114697211/204127380-3fb674fb-4636-48bb-9a0d-4e250eb8b6ad.png">
+
+la cual pude solucionar agregando el argumento name y poniendole un nombre sin espacios dentro de la funcion Dense()
 
 
 
